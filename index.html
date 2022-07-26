@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description" content="RanGO Project">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="styles/bootstrap4/bootstrap.min.css">
+
+    <link href="https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i" rel="stylesheet">
+
+
+    <!-- Custom style Dendrite-->
+    <link href="css/styleUpload.css" rel="stylesheet">
+ 
+    <title>ITOS</title>
+</head>
+
+<body>
+    <h1 class="text-center">Prueba para la compañia ITOS</h1>
+    <br><br>
+    <h2 class="text-center">
+        Primer punto
+    </h2>
+<p class="text-center">A continuaciòn encontrara los puntos de la prueba, solo necesitara presionar encima de cada uno de ellos para ejecutar su respuesta</p>
+<p class="text-center">PSTDA: no realize el 5to punto.</p>
+
+    <h2 class="text-center">
+        segundo punto
+    </h2>
+    <p class="text-center">Debe hacer click en la casilla de fecha y seleccionar una fecha cualquiera despues dar click en "Revisar fecha" y el programa mostrara un alert diciendo si el año de esa fecha es biciesto o no.</p>
+
+    <form class="text-center" name="fechas" id="fechas">
+
+        <div class="col-md-12">
+            <label> Ingrese fecha a calcular año bisiesto</label>
+            <input type="date" id="fechaInicio" placeholder="fechas">
+
+        </div>
+
+        <button type="submit">Revisar Fecha</button>
+
+
+    </form>
+    <h2 class="text-center">
+        Tercer punto
+    </h2>
+    <p class="text-center">Debe ingresar un numero de filas y columnas para crear una tabla dinamicamente y el programa mostrara otra ventana con la tabla creada.</p>
+    <form class="text-center" name="tablas" id="tablas">
+
+        <div class="col-md-12">
+            <label> Ingrese filas</label>
+            <input type="number" id="filas" placeholder="ingrese filas">
+
+        </div>
+
+        <div class="col-md-12">
+            <label> Ingrese columnas</label>
+            <input type="number" id="columnas" placeholder="ingrese columnas">
+
+        </div>
+
+        <button type="submit">Crear tabla dinamica</button>
+
+
+    </form>
+
+
+    <h2 class="text-center">
+        cuarto punto
+    </h2>
+    <p class="text-center">Aca solo debes dar click en "ejecutar array" y el programa generara aleatoriamente 20 numeros entre 0 a 100 y los organizara de menor a mayor .</p>
+    <div class="text-center">
+    <button type="button" onClick="generate()">ejecutar array</button>
+    </div>
+    <div class="col-md-6">
+        <output id="print">
+
+    </div>
+
+    
+    <h2 class="text-center">
+        Quinto punto
+    </h2>
+    <p class="text-center">Este punto no lo realize x tiempo que pena.</p>
+    <p class="text-center">no lo realize</p>
+    <h2 class="text-center">
+        Sexto punto
+    </h2>
+    <p class="text-center">Debe dar click en "ejecutar tabla de banco mx" y esta generara una tabla dinamica con la consulta de los ultimos 5 dias</p>
+
+    <table class="text-center" id='result'>
+        <thead>
+           
+        </thead>
+    </table>
+    <div class="text-center">
+    <button type="button" onClick="getData()">ejecutar tabla de banco mx</button>
+</div>
+
+
+    <script type="text/javascript" src="itosData.js"></script>
+    <script src='https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js'></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/dayjs/1.9.4/dayjs.min.js"
+        integrity="sha512-XZSHSEFj4QeE0G4pwy4tToyAhF2VXoEcF9CP0t1PSZMP2XHhEEB9PjM9knsdzcEKbi6GRMazdt8tJadz0JTKIQ=="
+        crossorigin="anonymous"></script>
+
+</body>
+<br><br><br>
+<footer class="sticky-footer bg-white">
+    <div class="container my-auto">
+        <div class="copyright text-center my-auto">
+            <span>Copyright &copy;
+                <script>
+                    document.write(new Date().getFullYear());
+                </script> | Prueba para la compañia ITOS.
+            </span>
+
+        </div>
+    </div>
+</footer>
+
+</html>
